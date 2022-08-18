@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador de Texto</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+      <img id="logo" src="./assets/Logo.svg" alt="Logo da alura">
+    </div>
+  </header>
+  <section id="textoInput">
+    <div class="wrapper">
+      <textarea name="texto" id="textoUsuario" cols="30" rows="10" autocomplete="off">Digite seu texto</textarea>
+    </div>
+  </section>
+  <section id="buttons">
+    <div class="wrapper">
+      <p><img src="./assets/Alert.svg" alt="Sinal de alerta">Apenas letras minúsculas e sem acento</p>
+      
+      <button id="btnCriptografar" onclick="btnEncriptar()">Criptografar</button>
+      <button id="btnDescriptografar" onclick="btnDescriptar()">Descriptografar</button>
+    </div>
+  </section>
+  <section id="textoOutput">
+    <div class="wrapper">
+        <textarea id="outputTexto" cols="30" rows="10" autocomplete="off"></textarea>
+    </div>
+  </section>
+
+  <script src="./main.js"></script>
+</body>
+</html>

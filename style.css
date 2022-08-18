@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  
+}
+:root{
+  --dark-blue-300: rgba(10, 56, 113, 1);
+  --light-blue-100: rgba(243, 245, 252, 1);
+
+
+  font-size: 62.5%;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-family: 'inter';
+  text-align: center;
+
+  background-color: var(--light-blue-100);
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+
+  margin-inline: auto;
+
+  padding-inline: 2.4rem;
+
+  font-family: 'inter';
+}
+
+header{
+  text-align: left;
+  
+  padding-top: 24px;
+  padding-left: 16px;
+}
+
+textarea {
+  font-size: 3.2rem;
+  font-family: 'inter';
+  font-weight: 400;
+  color: var(--dark-blue-300);
+  
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+
+  padding-top: 80px;
+  padding-inline: 16px;
+
+  resize: none;
+  max-width: 100%;
+  background-color: var(--light-blue-100);
+}
+
+button{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 16px;
+
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  border-bottom: 50px;
+  border-bottom: 1.6rem;
+  border-radius: 24px;
+
+  width: 100%;
+  padding: 24px;
+
+  font-family: 'inter';
+}
+
+button#btnCriptografar{
+  background-color: var(--dark-blue-300);
+  color: white;
+}
+
+button#btnCriptografar:hover{
+  background-color: var(--dark-blue-300);
+  color: white;
+  filter: brightness(1.3);
+}
+
+button#btnDescriptografar{
+  border: 1px solid var(--dark-blue-300);
+  color: var(--dark-blue-300);
+}
+
+button#btnDescriptografar:hover{
+  filter: brightness(1.1);
+}
